@@ -35,7 +35,7 @@ export const navigationBarData: NavData = {
 	logo: {
 		src: '/avatar.jpg',
 		alt: 'The tailwind astro theme',
-		text: 'Thomas Vochten'
+		text: 'thomas vochten'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },

@@ -27,7 +27,7 @@ export const configData: Config = {
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/avatar.jpg',
-		alt: 'Thomas Vochten avatar'
+		alt: 'Thomas Vochten'
 	},
 	canonical: true,
 	noindex: false,

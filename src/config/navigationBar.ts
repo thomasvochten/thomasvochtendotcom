@@ -35,7 +35,7 @@ export const navigationBarData: NavData = {
 	logo: {
 		src: '/avatar.jpg',
 		alt: 'Thomas Vochten',
-		text: 'thomasvochten.com'
+		text: 'Thomas Vochten'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },

@@ -10,18 +10,28 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
 	{
-		name: 'facebook',
-		link: '/',
-		icon: 'fb-icon'
+		name: 'linkedin',
+		link: 'https://linkedin.com/in/thomasvochten',
+		icon: 'linkedin-icon'
 	},
 	{
-		name: 'twitter',
-		link: '/',
-		icon: 'twitter-icon'
+		name: 'bluesky',
+		link: 'https://bsky.app/profile/thomasvochten.com',
+		icon: 'bluesky-icon'
 	},
 	{
-		name: 'discord',
-		link: '/',
-		icon: 'discord-icon'
+		name: 'github',
+		link: 'https://github.com/thomasvochten',
+		icon: 'github-icon'
+	},
+	{
+		name: 'signal',
+		link: 'https://signal.me/#eu/6XhSIeH1Ck6qdARg1tESkv2GDAdNFo7cJXAyydlxpA99oPf12_VPoKOgjG1KpqA0',
+		icon: 'signal-icon'
+	},
+	{
+		name: 'email',
+		link: 'mailto:mail@thomasvochten.com',
+		icon: 'email-icon'
 	}
 ]

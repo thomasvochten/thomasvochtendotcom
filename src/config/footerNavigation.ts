@@ -106,6 +106,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© 2025 Thomas Vochten'
+		copywriteText: '© Thomas Vochten'
 	}
 }

@@ -7,7 +7,7 @@ import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 // Content
 // Testimonial background
 import testimonialbackground from '/src/assets/theme-background.png'
-import avatar from '/public/avatar.jpg'
+
 // - SEO
 const SEO = {
 	title: 'Thomas Vochten',
@@ -17,5 +17,5 @@ const SEO = {
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-<Testimonial bg={testimonialbackground} bgPosition='right' avatar={avatar} />
+<Testimonial bg={testimonialbackground} bgPosition='right' />
 </Layout>

@@ -14,19 +14,19 @@ const mvpLogoUrl = '/src/assets/logos/mvp-dark.svg'; // Update with the path to 
 
 <div class="relative flex items-center justify-center text-center p-8 h-full bg-cover bg-center" style={`background-image: url(${backgroundUrl})`}>
     <div class="absolute inset-0 bg-black opacity-10 z-0"></div>
-    <div class="relative flex items-center z-10">
+    <div class="relative flex flex-col items-center z-10">
         {avatarUrl && (
-            <img src={avatarUrl} alt={`Avatar of ${name}`} class="rounded-full w-36 h-36 object-cover mr-4 hidden md:block" />
+            <img src={avatarUrl} alt={`Avatar of ${name}`} class="rounded-full w-36 h-36 object-cover mb-4 hidden md:block" />
         )}
-        <div class="text-left">
-            <div class="flex items-center mb-6">
+        <div class="text-center">
+            <div class="flex flex-col items-center mb-6">
                 <h1 class="text-white text-4xl flex items-center">
                     {name}
                     <span class="ml-4 hidden md:inline-block text-2xl">{emojis}</span>
                 </h1>
             </div>
-            <h2 class="text-gray-300 text-lg mb-1 text-center">{title}</h2>
-            <h2 class="text-gray-300 text-lg text-center">{secondTitle}</h2>
+            <h2 class="text-gray-300 text-lg mb-1">{title}</h2>
+            <h2 class="text-gray-300 text-lg">{secondTitle}</h2>
             <div class="flex justify-center mt-4">
                 <ul class="flex space-x-4 text-white">
                     {socialLinks.map((social) => (

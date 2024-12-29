@@ -30,7 +30,7 @@ const mvpLogoUrl = '/src/assets/logos/mvp-dark.svg'; // Update with the path to 
             <div class="flex justify-center mt-4">
                 <ul class="flex space-x-4 text-white">
                     {socialLinks.map((social) => (
-                        <li key={social.name}>
+                        <li>
                             <a href={social.link} aria-label={social.name} target="_blank" rel="noopener noreferrer">
                                 <Icon name={social.icon} class="text-white social-link w-8 h-8" />
                             </a>

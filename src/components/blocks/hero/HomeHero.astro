@@ -1,0 +1,46 @@
+---
+
+import { Icon } from 'astro-icon/components'
+import { socialLinks } from '../../../config/socialLinks';
+
+const avatarUrl = ''; // Update with the path to your avatar image or leave it empty to hide the avatar
+const backgroundUrl = '/src/assets/theme-background.png'; // Update with the path to your background image
+const name = 'Thomas Vochten';
+const title = 'technology evangelist Microsoft 365 & security'; // Update with your title
+const secondTitle = 'platform architect • speaker • trainer'; // Second title line
+const emojis = '☕🧑‍💻🏃'; // Emojis to display
+const mvpLogoUrl = '/src/assets/logos/mvp-dark.svg'; // Update with the path to your MVP logo
+---
+
+<div class="relative flex items-center justify-center text-center p-8 h-full bg-cover bg-center" style={`background-image: url(${backgroundUrl})`}>
+    <div class="absolute inset-0 bg-black opacity-10 z-0"></div>
+    <div class="relative flex items-center z-10">
+        {avatarUrl && (
+            <img src={avatarUrl} alt={`Avatar of ${name}`} class="rounded-full w-36 h-36 object-cover mr-4 hidden md:block" />
+        )}
+        <div class="text-left">
+            <div class="flex items-center mb-6">
+                <h1 class="text-white text-4xl flex items-center">
+                    {name}
+                    <span class="ml-4 hidden md:inline-block text-2xl">{emojis}</span>
+                </h1>
+            </div>
+            <h2 class="text-gray-300 text-lg mb-1 text-center">{title}</h2>
+            <h2 class="text-gray-300 text-lg text-center">{secondTitle}</h2>
+            <div class="flex justify-center mt-4">
+                <ul class="flex space-x-4 text-white">
+                    {socialLinks.map((social) => (
+                        <li key={social.name}>
+                            <a href={social.link} aria-label={social.name} target="_blank" rel="noopener noreferrer">
+                                <Icon name={social.icon} class="text-white social-link w-8 h-8" />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div class="flex justify-center mt-4">
+                <img src={mvpLogoUrl} alt="Microsoft MVP Logo" class="w-40 h-auto" />
+            </div>
+        </div>
+    </div>
+</div>
